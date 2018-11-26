@@ -1,0 +1,16 @@
+INFO _internal.py:87  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:87  * Restarting with stat
+WARNING _internal.py:87  * Debugger is active!
+INFO _internal.py:87  * Debugger PIN: 206-189-724
+INFO _internal.py:87 127.0.0.1 - - [26/Nov/2018 22:40:25] "GET / HTTP/1.1" 404 -
+INFO _internal.py:87 127.0.0.1 - - [26/Nov/2018 22:40:37] "GET /index HTTP/1.1" 404 -
+INFO _internal.py:87  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:87  * Restarting with stat
+WARNING _internal.py:87  * Debugger is active!
+INFO _internal.py:87  * Debugger PIN: 206-189-724
+INFO _internal.py:87 127.0.0.1 - - [26/Nov/2018 22:44:17] "GET / HTTP/1.1" 404 -
+INFO _internal.py:87  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:87  * Restarting with stat
+WARNING _internal.py:87  * Debugger is active!
+INFO _internal.py:87  * Debugger PIN: 206-189-724
+INFO _internal.py:87 127.0.0.1 - - [26/Nov/2018 22:46:20] "GET /api/v1.0/ HTTP/1.1" 200 -
