@@ -54,7 +54,7 @@ def create_app(config_name):
 
     # 注册蓝图
     from .blog_1_0 import main as main_print
-    app.register_blueprint(main_print, url_prefix='/api/v1.0')
+    app.register_blueprint(main_print)
 
     # 为app添加返回静态html的蓝图应用
     from .web_page import html as html_print
