@@ -14,7 +14,7 @@ def html_file(file_name):
         file_name = "index.html"
 
     if file_name != "favicon.ico":
-        file_name = "html/" + file_name
+        file_name = "templates/" + file_name
 
 
     csrf_token = csrf.generate_csrf()

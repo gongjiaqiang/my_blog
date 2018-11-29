@@ -5,3 +5,11 @@ from flask import Blueprint
 main = Blueprint('main', __name__, template_folder='templates')
 
 from . import views, login
+
+@main.after_request
+def after_request(response):
+    """设置默认的响应报文格式为application/json"""
+    # 如果响应报文response的Content-Type是以text开头，则将其改为默认的json类型
+    if response.headers.get("Content-Type").startswith("text"):
+        response.headers["Content-Type"] = "application/json"
+    return response

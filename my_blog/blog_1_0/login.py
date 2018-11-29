@@ -1,24 +1,21 @@
 # coding=utf8
 
-from flask import render_template,request
+from flask import render_template,request, jsonify
+from my_blog.utils.commons import RET
 
 from . import main
 
-@main.route('/login', methods=['GET', 'POST'])
+@main.route('/login', methods=['POST'])
 def login_process():
-    if request.method == 'GET':
-        return render_template('login.html')
-    else:
-        name = request.data.get('email')
-        password = request.data.get('password')
-        return render_template('index.html')
+    data = request.get_json()
+    email = data.get('email')
+    password = data.get('password')
+    return jsonify(errno=RET.OK, errmsg="OK",data={})
 
 
-@main.route('/register', methods=['GET', 'POST'])
+
+@main.route('/register', methods=['POST'])
 def register_process():
-    if request.method == 'GET':
-        return render_template('register.html')
-    else:
-        # name = request.data.get('email')
-        # password = request.data.get('password')
-        return render_template('login.html')
+
+    return jsonify(errno=RET.OK)
+
